@@ -1,1 +1,1 @@
-from .test_question import QuestionMethodTests
+from .models.test_question import QuestionMethodTests
