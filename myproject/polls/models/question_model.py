@@ -1,3 +1,5 @@
+import datetime
+from django.utils import timezone
 from django.db import models
 
 class Question(models.Model):
@@ -6,3 +8,11 @@ class Question(models.Model):
 
     class Meta:
         app_label = "polls" # the app this model belong to
+
+    def __str__(self):
+        return self.question_text
+
+    def was_published_recently(self):
+        return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
+
+    
