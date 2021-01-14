@@ -1,1 +1,1 @@
-# from .index_view import IndexView
+from .index_view import IndexView
