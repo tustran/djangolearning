@@ -1,0 +1,15 @@
+<h3>A string</h3>
+{{ var_string }}
+<h3>An array</h3>
+<ul>
+{% for part in var_array %}
+    <li>{{ part }}</li>
+{% endfor %}
+</ul>
+<h3>A dict</h3>
+<ul>
+    <li>{{ var_dict.part1 }}</li>
+    <li>{{ var_dict.part2 }}</li>
+    <li>{{ var_dict.part3 }}</li>
+    <li>{{ var_dict.part4 }}</li>
+</ul>
