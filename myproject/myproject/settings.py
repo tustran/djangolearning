@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls', # remember to put comma at the end of the last item in a list
 ]
 
 MIDDLEWARE = [
