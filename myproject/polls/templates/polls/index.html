@@ -1,15 +1,7 @@
-<h3>A string</h3>
-{{ var_string }}
-<h3>An array</h3>
-<ul>
-{% for part in var_array %}
-    <li>{{ part }}</li>
-{% endfor %}
-</ul>
-<h3>A dict</h3>
-<ul>
-    <li>{{ var_dict.part1 }}</li>
-    <li>{{ var_dict.part2 }}</li>
-    <li>{{ var_dict.part3 }}</li>
-    <li>{{ var_dict.part4 }}</li>
-</ul>
+<div id="questions">
+    {% for question in questions %}
+    <div class="question">
+        <a href="{% url 'poll_detail' question.id %}">{{ question.question_text }}</a>
+    </div>
+    {% endfor %}
+</div>
