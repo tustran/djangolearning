@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 {% if questions %}
 <div id="questions">
     <h1>Recent questions</h1>
@@ -22,3 +25,4 @@ No question available.
     {% endfor %}
 </div>
 {% endif %}
+{% endblock %}

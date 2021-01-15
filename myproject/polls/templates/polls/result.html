@@ -1,5 +1,6 @@
+{% extends "base.html" %}
 
-
+{% block content %}
 <h2>{{ question.question_text }}</h2>
 <table width="30%" border="1">
     <tr>
@@ -13,3 +14,4 @@
     </tr>
     {% endfor %}
 </table>
+{% endblock %}

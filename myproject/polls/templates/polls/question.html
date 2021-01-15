@@ -1,5 +1,6 @@
+{% extends "base.html" %}
 
-
+{% block content %}
 <form method="POST">
     {% csrf_token %}
     <h2>{{ question.question_text }}</h2>
@@ -15,3 +16,4 @@
     </ul>
     <button type="submit">Submit</button>
 </form>
+{% endblock %}
