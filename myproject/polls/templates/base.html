@@ -1,0 +1,11 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/polls/style.css' %}">
+        <script type="text/javascript" src="{% static 'js/polls/script.js' %}"></script>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
